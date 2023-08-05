@@ -15,15 +15,10 @@ namespace ProyectoFinal
 		{
 		}
 
-        public async void set(string collection, string id, Usuario usuario)
+        public async void setUser(string collection, string id, Usuario usuario)
         {
             SetResponse response = await base.client.SetAsync(collection + "/" + id, usuario);
         }
-
-        //public async void insertarProducto(string collection, string id, Producto producto)
-        //{
-        //    SetResponse response = await client.SetAsync(collection + "/" + id, producto);
-        //}
 
         public async Task<string> login(string user, string pwd)
         {

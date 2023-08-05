@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" Title="COLLECTIONS"
-             x:Class="ProyectoFinal.Views.DisplayProductos">
+             x:Class="ProyectoFinal.Views.PaginaPrincipal">
 
     <ContentView ControlTemplate="{StaticResource GeneralTemplate}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">

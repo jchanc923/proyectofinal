@@ -11,7 +11,7 @@ namespace ProyectoFinal
         {
             InitializeComponent();
 
-            MainPage = new PageLogin();
+            MainPage = new AdminAddProductos();
         }
 
         protected override void OnStart ()

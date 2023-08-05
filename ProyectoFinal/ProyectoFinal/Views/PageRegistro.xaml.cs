@@ -33,7 +33,7 @@ namespace ProyectoFinal.Views
 
             FirebaseUtilUsers util = new FirebaseUtilUsers();
 
-            util.set("usuarios", txtIdentificacion.Text, usuario);
+            util.setUser("usuarios", txtIdentificacion.Text, usuario);
 
         }
 

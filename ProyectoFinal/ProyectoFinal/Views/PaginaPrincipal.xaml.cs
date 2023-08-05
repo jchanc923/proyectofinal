@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace ProyectoFinal.Views
 {	
-	public partial class DisplayProductos : ContentPage
+	public partial class PaginaPrincipal : ContentPage
 	{	
-		public DisplayProductos ()
+		public PaginaPrincipal()
 		{
-			InitializeComponent ();
+            InitializeComponent();
             this.BindingContext = this;
         }
 
