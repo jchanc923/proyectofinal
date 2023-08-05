@@ -11,7 +11,7 @@ namespace ProyectoFinal
         {
             InitializeComponent();
 
-            MainPage = new PageRegistro();
+            MainPage = new PageLogin();
         }
 
         protected override void OnStart ()

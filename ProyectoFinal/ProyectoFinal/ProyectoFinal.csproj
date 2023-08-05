@@ -20,9 +20,11 @@
   <ItemGroup>
     <None Remove="Views\" />
     <None Remove="Model\" />
+    <None Remove="Utils\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Model\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
 </Project>

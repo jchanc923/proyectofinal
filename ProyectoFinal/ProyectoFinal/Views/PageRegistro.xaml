@@ -48,7 +48,6 @@
 
 
                         <Button x:Name="btnRegistrar" Text="Registrarme" BackgroundColor="#1964BE" TextColor="White" Clicked="BtnRegistrar_Clicked"/>
-                        <Button x:Name="btnTest" Text="test" BackgroundColor="#1964BE" TextColor="White" Clicked="BtnTest_Clicked"/>
                     </StackLayout>
                 </Frame>
             </Grid>

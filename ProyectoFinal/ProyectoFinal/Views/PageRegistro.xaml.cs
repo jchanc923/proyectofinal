@@ -31,19 +31,9 @@ namespace ProyectoFinal.Views
                 identificacion = txtIdentificacion.Text
             };
 
-            FirebaseUtil util = new FirebaseUtil();
+            FirebaseUtilUsers util = new FirebaseUtilUsers();
 
-            util.insertarUsuario("usuarios", txtIdentificacion.Text, usuario);
-
-        }
-
-        private async void BtnTest_Clicked(object sender, EventArgs e)
-        {
-
-
-            FirebaseUtil util = new FirebaseUtil();
-
-            util.get();
+            util.set("usuarios", txtIdentificacion.Text, usuario);
 
         }
 
@@ -55,7 +45,6 @@ namespace ProyectoFinal.Views
         private void TapLabelTerminosCondiciones_Tapped(object sender, EventArgs e)
         {
             popupTerminosCondiciones.IsVisible = true;
-            //await Navigation.PushModalAsync(new PagePopup());
         }
 
         private void BtnCerrarModal_Clicked(object sender, EventArgs e)
