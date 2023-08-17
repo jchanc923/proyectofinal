@@ -11,7 +11,13 @@ namespace ProyectoFinal
         {
             InitializeComponent();
 
-            MainPage = new AdminAddProductos();
+            // Autenticacion
+            Properties["IsLoggedIn"] = false;
+
+            MainPage = new MainPage();
+           
+           
+
         }
 
         protected override void OnStart ()

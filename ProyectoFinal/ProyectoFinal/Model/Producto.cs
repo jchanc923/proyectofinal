@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
 namespace ProyectoFinal.Model
 {
-	public class Producto
+
+    public class Producto
 	{
         public string id_producto { get; set; }
         public string nombre { get; set; }
@@ -11,5 +15,8 @@ namespace ProyectoFinal.Model
         public string url_imagen { get; set; }
         public int precio { get; set; }
     }
+
+
+    
 }
 
