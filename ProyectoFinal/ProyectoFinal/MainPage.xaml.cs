@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinal.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace ProyectoFinal
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = new MainPageViewModel();
         }
     }
 }

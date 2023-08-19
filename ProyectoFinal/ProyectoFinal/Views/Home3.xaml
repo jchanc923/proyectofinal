@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Views.Home3"
+              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Title="Home3"
+             IconImageSource ="explore.png">
+
+    <ContentPage.Content>
+
+        <Grid RowDefinitions="*,Auto">
+
+            <!-- 1. Main image -->
+            <Image Grid.Row="0" BackgroundColor="White"
+                   
+             Source="inicio" 
+             Aspect="AspectFit" />
+
+            <!-- 2. Description-->
+            <Frame Grid.Row="1" Margin="0,-35,0,25" CornerRadius="30" HasShadow="False">
+                <Grid RowDefinitions="Auto,Auto,*">
+                    <!-- Box mark-->
+                    <BoxView Grid.Row="0" WidthRequest="{OnPlatform iOS='110', Android='115'}" BackgroundColor="#d7d7d7"  HorizontalOptions="End" Rotation="-8" Margin="{OnPlatform iOS='0,98,0,0', Android='0,98,0,0'}" VerticalOptions="Start"/>
+                 
+
+                    <!-- Title-->
+                    <Label Grid.Row="0" LineHeight="1.5" FontAttributes="Bold" VerticalOptions="Start" HorizontalTextAlignment="Center" FontSize="{OnPlatform iOS='25', Android='20'}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Bienvenido a" FontSize="30"/>
+                                <Span FontSize="40" Text=" ConstructShopTools " TextColor="#DF0C00"/>
+
+                                <Span FontSize="12" Text="&#10; Iniciar"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+
+                    <!-- Description-->
+                    <Label Grid.Row="3" Text="El suministro de herramientas de construcción ideal para tu empresa o proyecto con cientos de opciones disponibles."
+       FontAttributes="Bold" TextColor="#9fa2a8" FontSize="{OnPlatform iOS='15', Android='13'}" LineHeight="1.4" Margin="30,0"
+       HorizontalTextAlignment="Center"/>
+
+                    <!-- Rounded Button-->
+                    <Button Grid.Row="2" BackgroundColor="#D90C21d" CornerRadius="33" HeightRequest="66" WidthRequest="66"
+        ImageSource="User"  HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,0,15"/>
+
+                </Grid>
+            </Frame>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

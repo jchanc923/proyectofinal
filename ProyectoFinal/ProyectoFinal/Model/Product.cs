@@ -4,18 +4,13 @@ using System.Text;
 
 namespace ProyectoFinal.Model
 {
-   public class Product
- 
+    public class Product
     {
         public string Name { get; set; }
-        public string Price { get; set; }
+        public decimal Price { get; set; }
         public string Image { get; set; }
-
-        public override string ToString()
-        {
-            return Name;
-        }
+        public bool HasOffer { get; set; }
+        public decimal OfferPrice { get; set; }
     }
-
-
 }
+

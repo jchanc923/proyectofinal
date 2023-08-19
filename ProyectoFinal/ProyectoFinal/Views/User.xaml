@@ -4,12 +4,20 @@
              x:Class="ProyectoFinal.Views.User"
                  Title="Cuenta"
     IconImageSource ="user.png">
-    
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="LightBlue" HeightRequest="200">
+                <Image Source="electricas.png" Aspect="AspectFill" HeightRequest="200" />
+                <Label Text="¡Bienvenido!" FontSize="24" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="FillAndExpand" Padding="20">
+                <Image Source="user_profile.png" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100" />
+                <Label Text="{Binding UserName}" FontSize="24" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" />
+                <Label Text="{Binding Email}" FontSize="18" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" />
+                <Button Text="Cerrar Sesión" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -15,8 +15,12 @@ namespace ProyectoFinal.Views
         public Home()
         {
             InitializeComponent();
+      
         }
-        private List<Product> GetCollections()
+
+      
+      
+    private List<Product> GetCollections()
         {
             var trendList = new List<Product>();
             trendList.Add(new Product { Image = "desbrozadora.png", Name = "Desbrozadora M18 FUEL™", Price = "$431.50" });

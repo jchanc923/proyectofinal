@@ -5,7 +5,8 @@
             x:Class="ProyectoFinal.MainPage">
 
     <local:Home/>
- 
+    <local:Home2/>
+    <local:Home3/>
     <local:CollectionsPage/>
     <local:Shopping/>
     <local:User/>

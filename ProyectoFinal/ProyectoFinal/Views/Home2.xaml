@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Views.Home2"
+              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Title="Home2"
+             IconImageSource ="explore.png">
+    
+    
+
+
+
+
+        <Grid RowDefinitions="*,Auto">
+        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="End" Margin="30,20">
+            <ImageButton Source="fav.png" Aspect="AspectFit" HeightRequest="32" WidthRequest="30" VerticalOptions="Center"/>
+            <ImageButton Source="cartFilled.png" Aspect="AspectFit" HeightRequest="32" WidthRequest="30" VerticalOptions="Center"/>
+        </StackLayout>
+        <Grid Grid.Row="2">
+
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="3"  Text="Collections" TextColor="Black" FontSize="20"/>
+
+            <Label Grid.Row="0" Grid.Column="3" Text="Show all" TextColor="Black" FontSize="14" VerticalOptions="Center" Opacity="0.5" HorizontalOptions="End" Margin="0,0,30,0"/>
+                <Grid>
+                    <!-- 1. Main image -->
+                    <Image Grid.Row="0" 
+                           Grid.Column="1" 
+        Source="banner2" 
+        Aspect="AspectFit" />
+                    
+   <Grid>
+
+       <!-- 1. Main image -->
+       <Image Grid.Column="0" 
+        Source="accesorios" 
+        Aspect="AspectFit" />
+
+       <!-- Here add the code that is being explained in the next block -->
+
+   </Grid>
+                    
+                    <!-- Here add the code that is being explained in the next block -->
+
+                </Grid>
+                    
+            </Grid>
+
+        </Grid>
+        <!-- 1. Main image -->
+            <Image Grid.Row="3" 
+                   
+                    Grid.RowSpan="2" 
+             Source="powertools" 
+             Aspect="AspectFit" />
+
+            <!-- Here add the code that is being explained in the next block -->
+
+
+   <Grid RowDefinitions="*,Auto">
+
+       <!-- 1. Main image -->
+
+       <Image Grid.Row="1" 
+        Source="banner2" 
+        Aspect="AspectFit" />
+
+            <!-- Here add the code that is being explained in the next block -->
+
+          
+   </Grid>
+
+       
+
+
+    </Grid>
+
+
+</ContentPage>
